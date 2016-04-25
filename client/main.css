@@ -111,6 +111,30 @@ header .hide-completed {
     margin-left: 5px;
 }
 
+.tasks-container {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(0,0,0,0.4);
+}
+
+
 @media (max-width: 600px) {
     li {
         padding: 12px 15px;
